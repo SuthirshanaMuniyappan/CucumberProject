@@ -13,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
@@ -20,7 +21,7 @@ import io.cucumber.java.en.*;
 
 public class steps {		
 
-	WebDriver driver = new EdgeDriver();
+	WebDriver driver = new ChromeDriver();
 
 	@Given("The user is on the login page")
 	public void the_user_is_on_the_login_page() {

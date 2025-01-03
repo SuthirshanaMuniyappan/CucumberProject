@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features ={"src/test/resources"}, 
 		glue = {"stepDef"},
 		tags = "@All_scenario",
-		plugin = {"pretty", "html:target/result.html"},
+		plugin = {"pretty", "json:target/cucumber.json"},
 		dryRun = false
 		
 		) 

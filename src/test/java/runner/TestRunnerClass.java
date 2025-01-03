@@ -10,7 +10,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(features ={"src/test/resources"}, 
-		glue = {"stepDef"},
+		glue = {"stepDef.steps"},
 		tags = "@All_scenario",
 		plugin = {"pretty", "html:target/result.html"},
 		dryRun = false

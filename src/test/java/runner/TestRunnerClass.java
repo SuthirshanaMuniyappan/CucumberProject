@@ -7,8 +7,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:/Users/smuniyappan2/eclipse-workspace/MavenProject/"
-		+ "src/test/resources", 
+@CucumberOptions(features ={"src/test/resources"}, 
 		glue = {"stepDef"},
 		tags = "@All_scenario",
 		plugin = {"pretty", "html:target/result.html"},
@@ -16,6 +15,5 @@ import io.cucumber.junit.CucumberOptions;
 		
 		) 
 public class TestRunnerClass {
-
 	
 }

@@ -19,7 +19,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.java.en.*;
 
-public class steps {		
+public class steps  {		
 
 	WebDriver driver = new ChromeDriver();
 
@@ -152,7 +152,7 @@ public class steps {
 		driver.quit();
 	}
 
-
+	
 	
 
 

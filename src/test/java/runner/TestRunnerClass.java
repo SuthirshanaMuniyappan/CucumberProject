@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features ={"src/test/resources"}, 
 		glue = {"stepDef"},
-		tags = "@All_scenario",
+		tags = "@NewInsurance", 
 		plugin = {"pretty", "json:target/cucumber.json"},
 		dryRun = false
 		

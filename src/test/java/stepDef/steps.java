@@ -1,5 +1,7 @@
 package stepDef;
 
+import static org.testng.Assert.assertEquals;
+
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -86,9 +88,6 @@ public class steps  {
 	public void an_error_msg_should_be_displayed() throws InterruptedException, IOException {
 		
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//button[text()='Submit']")).click();
-		
-		Thread.sleep(7000);
 		
 		TakesScreenshot screenshot = (TakesScreenshot) driver;             
 		File srcFile = screenshot.getScreenshotAs(OutputType.FILE);          
@@ -141,7 +140,7 @@ public class steps  {
 		Thread.sleep(2000);
 		WebElement tile = driver.findElement(By.xpath("//p[@class='text-lg font-bold text-white']"));
 		String page_title = tile.getText();
-		//Assert.assertEquals("ExpleoSurance", page_title);
+		assertEquals("ExpleoSurance", page_title);
 		System.out.println(page_title+" is validated successfully");
 		
 	}

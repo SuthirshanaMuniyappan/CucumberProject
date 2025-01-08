@@ -15,9 +15,9 @@ Feature: Register New User
 
     Examples: 
       | Email            | Password | ConfirmPassword |
-      | login993@gmail.com | tester@1 | tester@1        |
-      | login994@gmail.com | tester@2 | tester@2        |
-      | login995@gmail.com | tester@3 | tester@2        |
+      | login9933@gmail.com | tester@1 | tester@1        |
+      | login9944@gmail.com | tester@2 | tester@2        |
+      | login9955@gmail.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
@@ -30,6 +30,6 @@ Feature: Register New User
 
     Examples: 
       | Username         | Password |
-      | login993@gmail.com | tester@1 |
-      | login994@gmail.com | tester@2 |
-      | login995@gmail.com | tester@3 |
+      | login9933@gmail.com | tester@1 |
+      | login9944@gmail.com | tester@2 |
+      | login9955@gmail.com | tester@3 |

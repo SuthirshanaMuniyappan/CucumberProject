@@ -11,14 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import driver.allDrivers;
 import io.cucumber.java.en.*;
 
-public class registerNewAccount extends allDrivers{
+public class registerNewAccount {
 	
-	@Given("User should be in login page")
-	public void user_should_be_in_login_page() throws InterruptedException {
-		driver.get("http://192.168.99.141:3000/");
-		driver.manage().window().maximize();
-		Thread.sleep(1000);
-	}
+	WebDriver driver = new ChromeDriver();
+	
 
 	@When("User Clicks the Register New Account")
 	public void user_clicks_the_register_new_account() throws InterruptedException {
@@ -44,7 +40,7 @@ public class registerNewAccount extends allDrivers{
 	@Then("User should get the Success Message")
 	public void user_should_get_the_success_message() throws InterruptedException {
 		Thread.sleep(2000);
-		WebElement success = driver.findElement(By.xpath("//h2[normalize-space()='Registration successful!']"));
+		WebElement success = driver.findElement(By.xpath("//h2[text()='Registration successful!']"));
 		String text = success.getText();
 		System.out.println(text);
 		Thread.sleep(2000);

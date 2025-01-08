@@ -1,5 +1,7 @@
 package runner;
 
+import io.cucumber.core.snippets.SnippetType;
+
 //import org.junit.runner.RunWith;
 
 //import io.cucumber.core.snippets.SnippetType;

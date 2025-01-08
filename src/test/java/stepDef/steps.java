@@ -5,7 +5,6 @@ import static org.testng.Assert.assertEquals;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
-
 //import org.apache.commons.io.FileUtils;
 //import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -24,7 +23,8 @@ import io.cucumber.java.en.*;
 public class steps  {		
 
 	WebDriver driver = new ChromeDriver();
-
+	
+	
 	@Given("The user is on the login page")
 	public void the_user_is_on_the_login_page() {
 		driver.get("http://192.168.99.141:3000");
@@ -37,19 +37,16 @@ public class steps  {
 		
 		Thread.sleep(3000);
 		driver.findElement(By.name("username")).sendKeys(username);  //"suthirshana.muniyappan@expleogroup.com"
-		
 		Thread.sleep(3000);
 		driver.findElement(By.id("Password")).sendKeys(password); //"Suthir"
 	}
 
-	@When("Clicks the login button")
+	@When("Clicks the Submit button")
 	public void clicks_the_login_button() throws Throwable {
 		
 		Actions actions = new Actions(driver);
-		
 		Thread.sleep(5000);
 //		driver.findElement(By.xpath("//button[text()='Submit']")).click();
-		
 		WebElement login_btn = driver.findElement(By.xpath("//button[@type='submit']"));
 //		((JavascriptExecutor) driver).executeScript("arguments[0].click();", login_btn);
 		actions.click(login_btn).build().perform();
@@ -73,9 +70,9 @@ public class steps  {
 		System.out.println("**********Scenario 1st completed successfully***********");	 
 		driver.quit();
 	}
-
-	@When("User enters a invalid {string} and {string}")
-	public void user_enters_a_invalid_and(String username, String Password) {
+	
+	@When("User enters an invalid {string} and {string}")
+	public void user_enters_an_invalid_and(String username, String Password) {
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.name("username")).sendKeys("suthirshana@expleogroup.com");
@@ -84,8 +81,8 @@ public class steps  {
 		driver.findElement(By.id("Password")).sendKeys("Suthir");
 	}
 
-	@Then("An error msg should be displayed")
-	public void an_error_msg_should_be_displayed() throws InterruptedException, IOException {
+	@Then("An error message should be displayed")
+	public void an_error_message_should_be_displayed() throws InterruptedException, IOException {
 		
 		Thread.sleep(3000);
 		
@@ -106,6 +103,8 @@ public class steps  {
 		driver.quit();
 	}
 
+//3rd Scenerio	
+	
 	@When("The User leaves the {string} and {string} fields empty")
 	public void the_user_leaves_the_and_fields_empty(String username, String Password) throws InterruptedException {
 		
@@ -115,8 +114,8 @@ public class steps  {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 	}
 
-	@Then("A valid msg should be displayed")
-	public void a_valid_msg_should_be_displayed() {
+	@Then("A valid message should be displayed")
+	public void a_valid_message_should_be_displayed() {
 		System.out.println("No credentials added");	    
 	}
 
@@ -132,7 +131,7 @@ public class steps  {
 		driver.quit();
 	}
 	
-//5th Scenario>>>>
+ //5th Scenario>>>>
 	
 	@Then("Validate the dashboard page title")
 	public void validate_the_dashboard_page_title() throws Throwable {
@@ -150,10 +149,5 @@ public class steps  {
 		System.out.println("Scenario 5th completed successfully");	 
 		driver.quit();
 	}
-
-	
-	
-
-
 
 }

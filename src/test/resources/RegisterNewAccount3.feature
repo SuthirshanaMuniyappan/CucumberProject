@@ -6,7 +6,7 @@ Feature: Register New User
 
   @newUser
   Scenario Outline: Validating New User Registration
-    Given User should be in login page
+    Given The user is on the login page
     When User Clicks the Register New Account
     And User Enters "<Email>""<Password>" and "<ConfirmPassword>"
     Then User clicks the Register button
@@ -15,13 +15,13 @@ Feature: Register New User
 
     Examples: 
       | Email            | Password | ConfirmPassword |
-      | login40@gmail.com | tester@1 | tester@1        |
-      | login50@gmail.com | tester@2 | tester@2        |
-      | login60@gmail.com | tester@3 | tester@2        |
+      | login41110@gmail.com | tester@1 | tester@1        |
+      | login51110@gmail.com | tester@2 | tester@2        |
+      | login61110@gmail.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
-    Given User should be in login page
+    Given The user is on the login page
     When User enters the new registered "<Username>" and "<Password>"
     Then User clicks the submit button
     And User should be logged in Successfully
@@ -30,6 +30,6 @@ Feature: Register New User
 
     Examples: 
       | Username         | Password |
-      | login40@gmail.com | tester@1 |
-      | login50@gmail.com | tester@2 |
-      | login60@gmail.com | tester@3 |
+      | login41110@gmail.com | tester@1 |
+      | login51110@gmail.com | tester@2 |
+      | login61110@gmail.com | tester@3 |

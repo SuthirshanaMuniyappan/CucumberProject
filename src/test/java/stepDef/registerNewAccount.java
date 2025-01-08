@@ -2,6 +2,8 @@ package stepDef;
 
 import static org.testng.Assert.assertEquals;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +17,13 @@ public class registerNewAccount {
 	
 	WebDriver driver = new ChromeDriver();
 	
-
+	@Given("User enters into the login page")
+	public void user_enters_into_the_login_page() {
+		driver.get("http://192.168.99.141:3000");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
+	
 	@When("User Clicks the Register New Account")
 	public void user_clicks_the_register_new_account() throws InterruptedException {
 		
@@ -35,6 +43,7 @@ public class registerNewAccount {
 	@Then("User clicks the Register button")
 	public void user_clicks_the_register_button() {
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		
 	}
 
 	@Then("User should get the Success Message")
@@ -47,18 +56,27 @@ public class registerNewAccount {
 		WebElement nav_login_page_btn = driver.findElement(By.xpath("//button[text()='Navigate to login Page']"));
 		nav_login_page_btn.click();
 		Thread.sleep(2000);
-		System.out.println("***************************Scenario1 completed successfully***************************");
 	}
 
+	@Then("quit the 1st Browser for registerUser")
+	public void quit_the_1st_browser_for_register_user() {
+		
+		driver.quit();
+		System.out.println("***********New Registration Scenario1 completed successfully**********************");
+		
+	}
+	
 //Scenario2>>>>
 	
 	@Given("User enters the new registered {string} and {string}")
 
-	public void userEntersTheNewRegisteredAnd(String Username, String Password) {
+	public void userEntersTheNewRegisteredAnd(String Username, String Password) throws Exception {
 
-		driver.findElement(By.name("username")).sendKeys(Username);
+		Thread.sleep(2000);
+		
+		driver.findElement(By.id("username")).sendKeys(Username);
 
-		driver.findElement(By.name("Password")).sendKeys(Password);
+		driver.findElement(By.id("Password")).sendKeys(Password);
 
 	}
 
@@ -97,5 +115,12 @@ public class registerNewAccount {
 		System.out.println("Logged out successfully");
 	}
 	
-
+	@Then("quit the 2nd Browser for registerUser")
+	public void quit_the_2nd_browser_for_register_user() {
+		
+		driver.quit();
+		System.out.println("***********New Registration Scenario1 completed successfully**********************");
+		
+	}
+	
 }

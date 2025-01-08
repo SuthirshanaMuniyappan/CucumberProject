@@ -66,7 +66,7 @@ public class deletePolicy {
 	@Then("quit the Browser for {string} scenario")
 	public void quit_the_browser_for_scenario(String name) {
 	   
-		driver.close();
+		driver.quit();
 		System.out.println("***************Browser is closed for "+name+" scenario***************");
 	}
 	//

@@ -1,6 +1,5 @@
 #Author: Suthirshana
-
-@All_scenario
+@All_scenario 
 #@Register
 Feature: Register New User
 
@@ -11,13 +10,13 @@ Feature: Register New User
     And User Enters "<Email>""<Password>" and "<ConfirmPassword>"
     Then User clicks the Register button
     And User should get the Success Message
-   Then quit the 1st Browser for registerUser
+    Then quit the 1st Browser for registerUser
 
     Examples: 
-      | Email            | Password | ConfirmPassword |
-      | login9933@gmail.com | tester@1 | tester@1        |
-      | login9944@gmail.com | tester@2 | tester@2        |
-      | login9955@gmail.com | tester@3 | tester@2        |
+      | Email                | Password | ConfirmPassword |
+      | login99333@gmail.com | tester@1 | tester@1        |
+      | login99444gmail.com  | tester@2 | tester@2        |
+      | login99555@gmail.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
@@ -29,7 +28,7 @@ Feature: Register New User
     Then quit the 2nd Browser for registerUser
 
     Examples: 
-      | Username         | Password |
-      | login9933@gmail.com | tester@1 |
-      | login9944@gmail.com | tester@2 |
-      | login9955@gmail.com | tester@3 |
+      | Username             | Password |
+      | login99333@gmail.com | tester@1 |
+      | login99444@gmail.com | tester@2 |
+      | login99555@gmail.com | tester@3 |

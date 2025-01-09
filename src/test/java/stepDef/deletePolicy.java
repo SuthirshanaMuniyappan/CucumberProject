@@ -69,7 +69,9 @@ public class deletePolicy {
 		driver.quit();
 		System.out.println("***************Browser is closed for "+name+" scenario***************");
 	}
+	
 	//
+	
 	@Then("User clicks Yes button")
 	public void user_clicks_yes_button() throws Exception {
 		

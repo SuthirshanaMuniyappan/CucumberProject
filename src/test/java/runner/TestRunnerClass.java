@@ -14,9 +14,10 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features ={"src/test/resources"},
 		glue = {"stepDef"},
 		tags = "@All_scenario", 
+		
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/cucumber.html"},
-		dryRun = true
+		dryRun = false
 		
 		) 
 public class TestRunnerClass extends AbstractTestNGCucumberTests{

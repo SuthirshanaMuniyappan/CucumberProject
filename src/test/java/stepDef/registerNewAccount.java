@@ -123,4 +123,20 @@ public class registerNewAccount {
 		
 	}
 	
+	@Then("User get the error msg")
+	public void user_get_the_error_msg() {
+	WebElement errormsg = driver.findElement(By.xpath("//p[text()='Error registered user']"));
+	String text = errormsg.getText();
+	System.out.println(text);
+	
+	}
+
+	@Then("quit the 3rd Browser for registerUser with empty crendentials")
+	public void quit_the_3rd_browser_for_register_user_with_empty_crendentials() {
+	   driver.quit();
+	}
+
+
+
+	
 }

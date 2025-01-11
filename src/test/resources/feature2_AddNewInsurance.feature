@@ -27,3 +27,6 @@ Feature: Validation of New Insurace Details
       | Shan            | shan@expleo.com            | Expleo  | 09-02-2025 | Female | Vehicle Insurance | Personal Vehicle Damage |     300000 |    5000 |
       | Sri             | sri@expleo.com             | Expleo  | 10-02-2025 | Female | Health Insurance  | Laborotary Costs        |     300000 |    5000 |
       | Sumo            | sumo@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
+      | Sugu            | sugu@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
+      | Sumu            | sumu@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
+      

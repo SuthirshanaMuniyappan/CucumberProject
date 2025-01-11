@@ -1,6 +1,5 @@
 #Author: Suthirshana
-@All_scenario 
-#@Register
+@All_scenario #@Register
 Feature: Register New User
 
   @newUser
@@ -13,10 +12,10 @@ Feature: Register New User
     Then quit the 1st Browser for registerUser
 
     Examples: 
-      | Email            | Password | ConfirmPassword |
-      | loginA@gmail.com | tester@1 | tester@1        |
-      | loginB@gmail.com | tester@2 | tester@2        |
-      | loginC@gmail.com | tester@3 | tester@2        |
+      | Email           | Password | ConfirmPassword |
+      | user1@gmail.com | tester@1 | tester@1        |
+      | user2@gmail.com | tester@2 | tester@2        |
+      | user3@gmail.com | tester@3 | tester@2        |
 
   @registeredUser
   Scenario Outline: Validating Registered Users
@@ -28,10 +27,10 @@ Feature: Register New User
     Then quit the 2nd Browser for registerUser
 
     Examples: 
-      | Username         | Password |
-      | loginA@gmail.com | tester@1 |
-      | loginB@gmail.com | tester@2 |
-      | loginC@gmail.com | tester@3 |
+      | Username        | Password |
+      | user1@gmail.com | tester@1 |
+      | user2@gmail.com | tester@2 |
+      | user3@gmail.com | tester@3 |
 
   @registeredUserwithEmptyCrendentials
   Scenario Outline: Validating Registered Users
@@ -42,7 +41,7 @@ Feature: Register New User
     Then quit the 3rd Browser for registerUser with empty crendentials
 
     Examples: 
-      | Username           | Password |
-      | login0@gmail.com   |          |
-      | login00@gmail.com  |          |
-      | login000@gmail.com |          |
+      | Username         | Password |
+      | loginA@gmail.com |          |
+      | loginB@gmail.com |          |
+      | loginC@gmail.com |          |

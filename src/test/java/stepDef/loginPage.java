@@ -20,7 +20,7 @@ import org.openqa.selenium.interactions.Actions;
 
 import io.cucumber.java.en.*;
 
-public class steps  {		
+public class loginPage  {		
 
 	WebDriver driver = new ChromeDriver();
 	
@@ -124,6 +124,8 @@ public class steps  {
 		System.out.println("Scenario 3rd completed successfully");	 
 		driver.quit();
 	}
+	
+	//4th Scenerio
 
 	@Then("quit the 4th Browser")
 	public void quit_the_4th_browser() {

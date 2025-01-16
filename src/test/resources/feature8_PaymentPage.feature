@@ -1,5 +1,6 @@
 #Author: Suthir
-@All_Scenarios
+
+@All_scenario
 #@PaymentPage
 Feature: Payment Page Validation
 

@@ -1,5 +1,6 @@
 #Author: Suthir
-#@All_Scenarios 
+
+@All_scenario
 #@DeleteSelectedPolicy
 Feature: Delete Multiple Accounts Created in New Insurace
 

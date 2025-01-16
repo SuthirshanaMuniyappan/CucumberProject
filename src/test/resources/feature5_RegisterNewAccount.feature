@@ -1,5 +1,7 @@
 #Author: Suthirshana
-@All_scenario #@Register
+
+@All_scenario 
+#@Register
 Feature: Register New User
 
   @newUser

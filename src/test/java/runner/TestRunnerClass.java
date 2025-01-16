@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features ={"src/test/resources"},
 		glue = {"stepDef"},
-		tags = "@DeleteSelectedPolicy", 
+		tags = "@All_Scenarios", 
 		
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/cucumber.html"},

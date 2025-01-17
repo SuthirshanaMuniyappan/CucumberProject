@@ -1,10 +1,9 @@
-#Author:Suthir
-
 @All_scenario
 Feature: Validation of New Insurace Details
-
+#Author:Suthir
   @NewInsurance
   Scenario Outline: Validation of Adding New Insurance
+  
     Given User should be in login Page with valid credentials
     And User Clicks the New Insurance Tab
     And User enters the "<Name>", "<Email>", "<Address>", "<Date>"
@@ -30,4 +29,3 @@ Feature: Validation of New Insurace Details
       | Sumo            | sumo@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
       | Sugu            | sugu@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
       | Sumu            | sumu@expleo.com            | Expleo  | 11-02-2025 | Female | Health Insurance  | Hospitalization Costs   |     300000 |    5000 |
-      

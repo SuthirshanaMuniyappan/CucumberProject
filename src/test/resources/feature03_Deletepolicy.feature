@@ -1,8 +1,8 @@
-#Author: Suthir
 
 @All_scenario
 #@deletePolicy
 Feature: Delete Policy
+#Author: Suthir
 
   @delete_cancel
   Scenario Outline: Validating Delete Policy for Cancel button

@@ -1,8 +1,6 @@
-#Author: Suthir
-
 @All_scenario
 Feature: Validation of Deleting Users in ExpleoSurance Page
-
+#Author: Suthir
   @deleteAccount
   Scenario Outline: Deleting Registered Users
     Given User enter the ExpleosuraceHome page

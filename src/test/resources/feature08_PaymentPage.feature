@@ -1,9 +1,7 @@
-#Author: Suthir
-
 @All_scenario
 #@PaymentPage
 Feature: Payment Page Validation
-
+#Author: Suthir
   Scenario: Validating payemnts page
     Given User is in LoginPage
     When selecting Payment Page

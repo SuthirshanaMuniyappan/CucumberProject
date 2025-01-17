@@ -1,9 +1,7 @@
-#Author: Suthir
-
 @All_scenario
 #@TableHeader
 Feature: Get Table Header
-
+#Author: Suthir
   @scenario_01
   Scenario Outline: Print table header in console
     #Given User is on the login page

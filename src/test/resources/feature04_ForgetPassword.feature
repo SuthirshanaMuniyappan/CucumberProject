@@ -2,6 +2,7 @@
 @All_scenario
 #@ForgetPassword
 Feature: User is changing the password
+#Author: Suthir
 
   @ChangePassword
   Scenario: User is changing the Password

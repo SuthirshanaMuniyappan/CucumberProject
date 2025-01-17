@@ -1,8 +1,7 @@
-#Author:Suthirshana
-
 @All_scenario
 #@LoginPage
 Feature: Login Page Functionality
+#Author:Suthir
 
   @scenario_01
   Scenario Outline: Successful Login with valid credentials

@@ -1,9 +1,7 @@
-#Author: Suthirshana
-
 @All_scenario 
 #@Register
 Feature: Register New User
-
+#Author: Suthir
   @newUser
   Scenario Outline: Validating New User Registration
     Given User enters into the login page

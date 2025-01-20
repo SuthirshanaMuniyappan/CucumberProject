@@ -13,11 +13,11 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features ={"src/test/resources"},
 		glue = {"stepDef"},
-		tags = "@LoginPage", 
+		tags = "@All_scenario", 
 		
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/cucumber.html"},
-		dryRun = false
+		dryRun = true
 		
 		) 
 public class TestRunnerClass extends AbstractTestNGCucumberTests{

@@ -21,7 +21,7 @@ import org.openqa.selenium.interactions.Actions;
 import hooks.BaseClass;
 import io.cucumber.java.en.*;
 
-public class loginPage extends BaseClass {		
+public class loginPage {		
 
 	WebDriver driver = new ChromeDriver();
 	

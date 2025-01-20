@@ -1,5 +1,5 @@
 @All_scenario
-#@LoginPage
+@LoginPage
 Feature: Login Page Functionality
 #Author:Suthir
 

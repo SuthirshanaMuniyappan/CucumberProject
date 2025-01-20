@@ -1,7 +1,7 @@
 @All_scenario 
 @withoutAddress
 Feature: New Insurance Fields - Address
-  Author: ShivaShankaran
+  Author: Suthir
 
   Scenario: Validation all fields of New Insurace without Address
     Given User is in LoginPage

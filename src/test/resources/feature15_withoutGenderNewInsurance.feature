@@ -1,6 +1,6 @@
 @All_scenario
 #@withoutGender
-Feature: New Insurance Fields - Gender
+Feature: TC15_New Insurance Fields - Gender
   #Author: Suthir
 
   Scenario: Validation all fields of New Insurace without Gender

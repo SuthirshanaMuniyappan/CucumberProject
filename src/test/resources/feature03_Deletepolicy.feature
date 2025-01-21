@@ -1,7 +1,7 @@
 
 @All_scenario
 #@deletePolicy
-Feature: Delete Policy
+Feature: TC03_Delete Policy
 #Author: Suthir
 
   @delete_cancel

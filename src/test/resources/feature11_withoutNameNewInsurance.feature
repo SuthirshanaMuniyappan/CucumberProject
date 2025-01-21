@@ -1,6 +1,6 @@
 @All_scenario
 @withoutNameFeature
-Feature: New Insurance Page - WithoutName
+Feature: TC11_New Insurance Page - WithoutName
 
   #Author: Suthir
   Scenario: Validation of New Insurance Fields without Name

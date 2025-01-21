@@ -1,7 +1,7 @@
 #Author: Suthir
 @All_scenario
 #@ForgetPassword
-Feature: User is changing the password
+Feature: TC04_User is changing the password
 #Author: Suthir
 
   @ChangePassword

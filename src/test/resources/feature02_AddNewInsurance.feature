@@ -1,5 +1,5 @@
 @All_scenario
-Feature: Validation of New Insurace Details
+Feature: TC02_Validation of New Insurace Details
 #Author:Suthir
   @NewInsurance
   Scenario Outline: Validation of Adding New Insurance

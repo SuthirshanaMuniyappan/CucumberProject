@@ -1,7 +1,7 @@
 
 @All_scenario
 #@withoutSumInsured
-Feature: New Insurance Fields - SumInsured
+Feature: TC16_New Insurance Fields - SumInsured
   Author: Suthir
 
   Scenario: Validation all fields of New Insurace without SumInsured

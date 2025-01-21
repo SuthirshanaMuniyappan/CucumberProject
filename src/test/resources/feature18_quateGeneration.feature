@@ -1,7 +1,6 @@
-
 @All_scenario
 #@quateGeneration
-Feature: Quate Generation
+Feature: TC18_Quate Generation
   #Author: Suthir
 
   Scenario: Validating the Quate Generation Page

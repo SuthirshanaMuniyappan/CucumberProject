@@ -1,6 +1,6 @@
 @All_scenario 
 #@DeleteRegisterUser
-Feature: Delete Multiple Registered Accounts Created in New Insurace
+Feature: TC10_Delete Multiple Registered Accounts Created in New Insurace
 
   #Author: Suthir
   Scenario Outline: Validation of Adding New Insurance

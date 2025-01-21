@@ -1,6 +1,6 @@
 @All_scenario 
 #@DeleteSelectedPolicy
-Feature: Delete Multiple Accounts Created in New Insurace
+Feature: TC09_Delete Multiple Accounts Created in New Insurace
 
   #Author: Suthir
   Scenario: Vaildating multiple delete account created in New Insurance

@@ -1,6 +1,6 @@
 @All_scenario
 @withoutEmailFeature
-Feature: New Insurance page - WithoutEmail
+Feature: TC12_New Insurance page - WithoutEmail
   #Author: Suthir
 
   Scenario: Validation all fields of New Insurace without Email

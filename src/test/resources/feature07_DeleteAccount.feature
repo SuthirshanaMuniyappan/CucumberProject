@@ -1,5 +1,5 @@
 @All_scenario
-Feature: Validation of Deleting Users in ExpleoSurance Page
+Feature: TC07_Validation of Deleting Users in ExpleoSurance Page
 #Author: Suthir
   @deleteAccount
   Scenario Outline: Deleting Registered Users

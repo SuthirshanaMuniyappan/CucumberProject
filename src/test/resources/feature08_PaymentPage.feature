@@ -1,6 +1,6 @@
 @All_scenario
 #@PaymentPage
-Feature: Payment Page Validation
+Feature: TC08_Payment Page Validation
 #Author: Suthir
   Scenario: Validating payemnts page
     Given User is in LoginPage

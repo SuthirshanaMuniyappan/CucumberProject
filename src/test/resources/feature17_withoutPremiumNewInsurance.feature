@@ -1,6 +1,6 @@
 @All_scenario
 #@withoutPremium
-Feature: New Insurance Fields - Premium
+Feature: TC17_New Insurance Fields - Premium
   Author: Suthir
 
   Scenario: Validation all fields of New Insurace without Premium

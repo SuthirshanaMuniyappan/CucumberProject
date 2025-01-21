@@ -1,6 +1,6 @@
 @All_scenario
 #@withoutDOB
-Feature: New Insurance Fields - DOB
+Feature: TC14_New Insurance Fields - DOB
   #Author: Suthir
 
   Scenario: Validation all fields of New Insurace without DOB

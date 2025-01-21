@@ -1,6 +1,6 @@
 @All_scenario
 #@LoginPage
-Feature: Login Page Functionality
+Feature: TC1_Login Page Functionality
 #Author:Suthir
 
   @scenario_01

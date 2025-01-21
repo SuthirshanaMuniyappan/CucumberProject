@@ -1,6 +1,6 @@
 @All_scenario 
 #@Register
-Feature: Register New User
+Feature: TC05_Register New User
 #Author: Suthir
   @newUser
   Scenario Outline: Validating New User Registration

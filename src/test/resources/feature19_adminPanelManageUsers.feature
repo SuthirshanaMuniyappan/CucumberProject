@@ -1,6 +1,6 @@
 
 @All_scenario
-@adminPanelManageUsers
+#@adminPanelManageUsers
 Feature: TC19_Admin Panel
 
 #Author:Suthir

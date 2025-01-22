@@ -1,5 +1,5 @@
 @All_scenario
-@deleteMultiplePolicy
+#@deleteMultiplePolicy
 Feature: Multiple Policy Delete in Dashboard
   Author: Suthir
  

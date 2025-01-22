@@ -1,4 +1,4 @@
-@All_scenario @PolicyInitiation
+@All_scenario #@PolicyInitiation
 Feature: TC21_Policy Initiation
 
   Scenario Outline: Validating the policy initiation page

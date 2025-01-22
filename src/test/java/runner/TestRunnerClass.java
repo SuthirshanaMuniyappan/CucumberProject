@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class)
 @CucumberOptions(features ={"src/test/resources"},
 		glue = {"stepDef"},
-		tags = "@All_scenario", 
+		 tags = "@adminPanelManageUsers", 
 		
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/cucumber.html"},

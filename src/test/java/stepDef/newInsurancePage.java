@@ -25,11 +25,8 @@ public class newInsurancePage {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.findElement(By.name("username")).sendKeys("suthirshana.muniyappan@expleogroup.com");  
-		Thread.sleep(3000);
 		driver.findElement(By.id("Password")).sendKeys("Suthir"); 
         Actions actions = new Actions(driver);
-		
-		Thread.sleep(5000);
 		
 		WebElement login_btn = driver.findElement(By.xpath("//button[@type='submit']"));
 		actions.click(login_btn).build().perform();

@@ -26,38 +26,31 @@ public void user_is_on_the_login_page_with_valid_credential() {
 
 @When("user clicks the New Insurance")
 public void user_clicks_the_new_insurance() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
 }
 
 @When("user enters the {string} and {string} and {string} and {string}")
 public void user_enters_the_and_and_and(String string, String string2, String string3, String string4) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+  
 }
 
 @When("user clicks the Gender")
 public void user_clicks_the_gender() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
 }
 
 @When("user enters {string} and {string} and {string} and {string}")
 public void user_enters_and_and_and(String string, String string2, String string3, String string4) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
 }
 
 @When("user clicks the button")
 public void user_clicks_the_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+   
 }
 
 @Then("user clicks the submit")
 public void user_clicks_the_submit() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
+    
 }
 
 

@@ -3,7 +3,6 @@ package runner;
 import io.cucumber.core.snippets.SnippetType;
 
 //import org.junit.runner.RunWith;
-
 //import io.cucumber.core.snippets.SnippetType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 //import io.cucumber.junit.Cucumber;
@@ -11,15 +10,16 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
-@CucumberOptions(features ={"src/test/resources"},
-		glue = {"stepDef"},
-		 tags = "@All_scenario", 
-		
+@CucumberOptions(
+		features ={"src/test/resources/ExpleoSurance"},
+		glue = {"stepDef", "hooks"},
+		// tags = "@All_scenario", 
 		plugin = {"pretty", "json:target/cucumber.json", 
 							"html:target/cucumber.html"},
 		dryRun = true
-		
 		) 
 public class TestRunnerClass extends AbstractTestNGCucumberTests{
+	
+	
 	
 }

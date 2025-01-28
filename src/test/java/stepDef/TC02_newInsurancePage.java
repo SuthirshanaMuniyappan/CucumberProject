@@ -10,11 +10,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 import driver.allDrivers;
+import driver.drivers;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class newInsurancePage {
+public class TC02_newInsurancePage extends drivers {
 	
 	WebDriver driver = new ChromeDriver();
 	

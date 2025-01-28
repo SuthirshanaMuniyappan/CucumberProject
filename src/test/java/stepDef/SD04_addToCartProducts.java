@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import driver.drivers;
 import io.cucumber.java.en.Then;
 
-public class addToCartProducts extends drivers {
+public class SD04_addToCartProducts extends drivers {
 	
 	@Then("Add to Cart products")
 	public void add_to_cart_products() throws InterruptedException {

@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class LoginPagetoSauceDemo extends drivers {
+public class SD01_LoginPagetoSauceDemo extends drivers {
 	 
 	@Given("User navigate to the Sauce Demo login page")
 	public void User_navigate_to_the_sauce_demo_login_page() {

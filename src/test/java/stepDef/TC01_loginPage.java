@@ -18,10 +18,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import driver.drivers;
 import hooks.BaseClass;
 import io.cucumber.java.en.*;
 
-public class loginPage {		
+public class TC01_loginPage extends drivers {		
 
 	WebDriver driver = new ChromeDriver();
 	

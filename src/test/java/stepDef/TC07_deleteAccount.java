@@ -6,11 +6,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+import driver.drivers;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class deleteAccount {
+public class TC07_deleteAccount extends drivers {
 	
 	WebDriver driver = new ChromeDriver();
 	

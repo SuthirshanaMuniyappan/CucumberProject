@@ -9,11 +9,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+import driver.drivers;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class policyInitiationExpleoSurance {
+public class TC21_policyInitiationExpleoSurance extends drivers{
 
 WebDriver driver = new ChromeDriver();
 

@@ -3,9 +3,10 @@ package stepDef;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class deleteRegisteredUser {
+public class TC10_deleteRegisteredUser extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 	

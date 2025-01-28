@@ -9,9 +9,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class paymentPage {
+public class TC08_paymentPage extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 	

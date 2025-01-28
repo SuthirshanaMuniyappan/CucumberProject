@@ -11,9 +11,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import driver.allDrivers;
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class registerNewAccount {
+public class TC05_registerNewAccount extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 	

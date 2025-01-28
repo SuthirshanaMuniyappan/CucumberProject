@@ -6,9 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class forgetPassword {
+public class TC04_forgetPassword extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 	

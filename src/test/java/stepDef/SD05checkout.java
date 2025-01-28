@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import driver.drivers;
 import io.cucumber.java.en.Then;
 
-public class checkout extends drivers {
+public class SD05checkout extends drivers {
 	
 	@Then("User click the Check out button")
 	public void user_click_the_check_out_button() {

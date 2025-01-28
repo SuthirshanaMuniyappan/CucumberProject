@@ -10,7 +10,7 @@ import org.openqa.selenium.TakesScreenshot;
 import driver.drivers;
 import io.cucumber.java.en.When;
 
-public class invalidLogintoSauceDemo extends drivers {
+public class SD08_invalidLogintoSauceDemo extends drivers {
 
 	@When("User enter invalid Username and Password")
 	public void user_enter_invalid_username_and_password() {

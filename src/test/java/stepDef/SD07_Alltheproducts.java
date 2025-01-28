@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.drivers;
 import io.cucumber.java.en.When;
 
-public class Alltheproducts extends drivers {
+public class SD07_Alltheproducts extends drivers {
 	
 	@When("user add all the product to the cart")
 	public void user_add_all_the_product_to_the_cart() throws InterruptedException {

@@ -13,9 +13,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class multipleDelete  {
+public class TC20_multipleDelete extends drivers {
 
 	WebDriver driver= new ChromeDriver();
 	

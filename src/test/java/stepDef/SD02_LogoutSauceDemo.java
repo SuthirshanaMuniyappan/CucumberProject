@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import driver.drivers;
 import io.cucumber.java.en.Then;
 
-public class LogoutSauceDemo extends drivers  {
+public class SD02_LogoutSauceDemo extends drivers  {
 	@Then("User clicks the Open Menu")
 	public void user_clicks_the_open_menu() throws InterruptedException {
 		Thread.sleep(2000);

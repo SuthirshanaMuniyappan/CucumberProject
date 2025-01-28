@@ -5,11 +5,12 @@ import java.time.Duration;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import driver.drivers;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class quateGeneration {
+public class TC18_quateGeneration extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 	@Given("user login the page with valid credential")

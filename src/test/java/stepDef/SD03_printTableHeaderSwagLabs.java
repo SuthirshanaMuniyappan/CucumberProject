@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import driver.drivers;
 import io.cucumber.java.en.Then;
 
-public class printTableHeaderSwagLabs extends drivers {
+public class SD03_printTableHeaderSwagLabs extends drivers {
 	
 	@Then("Print Header Swag Labs")
 	public void print_header_swag_labs() {

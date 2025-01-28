@@ -10,9 +10,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class withoutNameNewInsurance {
+public class TC11_withoutNameNewInsurance extends drivers {
 
 	WebDriver driver = new ChromeDriver();
 

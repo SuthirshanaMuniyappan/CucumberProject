@@ -13,7 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class Filters extends drivers {
+public class SD09_Filters extends drivers {
 
 	@When("User select the filter option \\(A to Z) and take screenshot")
 	public void user_select_the_filter_option_a_to_z_and_take_screenshot() throws IOException {

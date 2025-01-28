@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import driver.drivers;
 import io.cucumber.java.en.Then;
 
-public class Multipleproductsremove extends drivers  {
+public class SD06_Multipleproductsremove extends drivers  {
 	
 	@Then("user add another product to the cart")
 	public void user_add_another_product_to_the_cart() throws InterruptedException {

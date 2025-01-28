@@ -9,9 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class deletePolicy {
+public class TC03_deletePolicy extends drivers{
 	
 	WebDriver driver = new ChromeDriver();
 

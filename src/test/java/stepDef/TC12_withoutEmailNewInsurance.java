@@ -10,18 +10,23 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class withoutAddressNewInsurance {
+public class TC12_withoutEmailNewInsurance extends drivers{
 	
 	WebDriver driver= new ChromeDriver();
 
-	
-	@When("User filled all the fields without Address")
-	public void user_filled_all_the_fields_without_address() {
+	@When("selecting New Insurance Tab")
+	public void selecting_new_insurance_tab() {
+		driver.findElement(By.xpath("//a[normalize-space()='New Insurance']")).click();
+	}
+
+	@When("User filled all the fields without Email")
+	public void user_filled_all_the_fields_without_email() {
 		driver.findElement(By.id("Name")).sendKeys("Expleo");
-		driver.findElement(By.id("email")).sendKeys("expleo@expleo.com");
-		driver.findElement(By.id("Address")).sendKeys(" ");
+		driver.findElement(By.id("email")).sendKeys(" ");
+		driver.findElement(By.id("Address")).sendKeys("Expleo");
 		driver.findElement(By.id("DateOfBirth")).sendKeys("31-01-2025");
 		driver.findElement(By.xpath("//input[@value='Female']")).click();
 		WebElement policyType = driver.findElement(By.xpath("//select[@name='policyType']"));
@@ -38,16 +43,13 @@ public class withoutAddressNewInsurance {
 		driver.findElement(By.xpath("//input[@value='No']")).click(); 
 	}
 
-	@Then("It should show the error msg Address is Required")
-	public void it_should_show_the_error_msg_address_is_required() {
+	@Then("It should show the error msg and then Logout")
+	public void it_should_show_the_error_msg_and_then_logout() {
+		driver.findElement(By.xpath("//button[@type='submit']")).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Submit']"))).click();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		String text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[normalize-space()='*Address is required']"))).getText();
-		System.out.println(text);     
-
+		String text = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[normalize-space()='*Name is required']"))).getText();
+		System.out.println(text);
 	}
-
 
 
 

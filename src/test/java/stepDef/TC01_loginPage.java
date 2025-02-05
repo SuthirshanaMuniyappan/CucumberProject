@@ -24,14 +24,14 @@ import io.cucumber.java.en.*;
 
 public class TC01_loginPage extends drivers {		
 
-	WebDriver driver = new ChromeDriver();
+	//WebDriver driver = new ChromeDriver();
 	
 	
 	@Given("The user is on the login page")
 	public void the_user_is_on_the_login_page() {
-		driver.get("http://192.168.99.141:3000");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//		driver.get("http://192.168.99.141:3000");
+//		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 
 	@When("User should login {string} and {string}")

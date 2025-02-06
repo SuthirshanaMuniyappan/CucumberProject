@@ -1,4 +1,5 @@
-#@AddToCart
+@Sauce_Demo
+@All_Scenario
 Feature: Add to cart product
 
 #Author: Suthir

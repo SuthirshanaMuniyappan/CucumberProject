@@ -1,4 +1,5 @@
-#@Alltheproducts
+@Sauce_Demo
+@All_Scenario
 Feature: Add all the Products 
 
 #Author: Suthir

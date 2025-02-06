@@ -1,3 +1,5 @@
+@Sauce_Demo
+@All_Scenario
 Feature: Filter validation
 
   Scenario: Validation of filers

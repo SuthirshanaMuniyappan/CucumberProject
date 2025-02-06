@@ -1,28 +1,12 @@
 package stepDef;
 
-import static org.testng.Assert.assertEquals;
-
-import java.io.File;
-import java.io.IOException;
 import java.time.Duration;
-//import org.apache.commons.io.FileUtils;
-//import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-<<<<<<< HEAD
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-=======
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
->>>>>>> f545637ad6966003fc2c30516b7fd1a47ce765c8
 import driver.drivers;
 import io.cucumber.java.en.*;
 
@@ -33,7 +17,6 @@ public class TC01_loginPage extends drivers {
 		String currentUrl = driver.getCurrentUrl();
 		System.out.println(currentUrl);
 		System.out.println("Expleosurance Page launched from hooks Successfully");
-
 	}
 
 	@When("User should login {string} and {string}")
@@ -58,19 +41,19 @@ public class TC01_loginPage extends drivers {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", logout_btn);
 		System.out.println("Login Successful");
 	}
-	
+
 	@Given("User Enters invalid {string} and invalid {string}")
 	public void user_enters_invalid_and_invalid(String username, String password) {
 		driver.findElement(By.name("username")).sendKeys(username);
 		driver.findElement(By.name("Password")).sendKeys(password);
 	}
- 
+
 	@When("User Click the login button")
 	public void user_click_the_login_button() throws InterruptedException {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		Thread.sleep(1000);
 	}
- 
+
 	@Then("Error message will be displayed")
 	public void error_message_will_be_displayed() {
 		WebElement error = driver.findElement(By.xpath("//p[contains(text(), \"Invalid username or password\")]"));
@@ -82,13 +65,13 @@ public class TC01_loginPage extends drivers {
 		driver.findElement(By.name("username")).sendKeys(username);
 		driver.findElement(By.name("Password")).sendKeys(password);
 	}
- 
+
 	@When("User Clicks the login button")
 	public void user_clicks_the_login_button() throws InterruptedException {
 		driver.findElement(By.xpath("//button[text()='Submit']")).click();
 		Thread.sleep(1000);
 	}
- 
+
 	@Then("Error message will be displayed as Username and password are required")
 	public void error_message_will_be_displayed_as_username_and_password_are_required() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -96,6 +79,4 @@ public class TC01_loginPage extends drivers {
 		String text = error.getText();
 		System.out.println(text);
 	}
-}
-
 }

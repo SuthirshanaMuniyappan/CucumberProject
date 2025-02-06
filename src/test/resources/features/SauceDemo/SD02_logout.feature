@@ -1,4 +1,5 @@
-#@Logout
+@Sauce_Demo
+@All_Scenario
 Feature: Logout Sauce Demo
 
 #Author: Suthir

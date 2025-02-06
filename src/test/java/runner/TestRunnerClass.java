@@ -1,7 +1,5 @@
 package runner;
 
-import io.cucumber.core.snippets.SnippetType;
-
 //import org.junit.runner.RunWith;
 //import io.cucumber.core.snippets.SnippetType;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
@@ -11,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-		features ={"src/test/resources"},
+		features ={"src/test/resources/ExpleoSurance/feature01_LoginPage.feature"},
 		glue = {"stepDef", "hooks"},
 	    tags = "@All_scenario", 
 		plugin = {"pretty", "json:target/cucumber.json", 

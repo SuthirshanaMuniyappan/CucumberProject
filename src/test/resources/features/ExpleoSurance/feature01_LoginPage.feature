@@ -1,7 +1,6 @@
 @All_scenario
 #@LoginPage
 Feature: TC01_Login Page Functionality
-#Author:Suthir
 
   @scenario_01
   Scenario Outline: Successful Login with valid credentials

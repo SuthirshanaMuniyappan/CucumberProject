@@ -14,8 +14,6 @@ import driver.drivers;
 import io.cucumber.java.en.*;
 
 public class TC12_withoutEmailNewInsurance extends drivers{
-	
-	WebDriver driver= new ChromeDriver();
 
 	@When("selecting New Insurance Tab")
 	public void selecting_new_insurance_tab() {

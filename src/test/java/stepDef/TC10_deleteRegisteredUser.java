@@ -12,7 +12,7 @@ public class TC10_deleteRegisteredUser extends drivers{
 	
 	@Then("Quit the NewInsurance Browser")
 	public void quit_the_new_insurance_browser() {
-		driver.quit();
+		System.out.println("Browser closed");
 	}
 
 }

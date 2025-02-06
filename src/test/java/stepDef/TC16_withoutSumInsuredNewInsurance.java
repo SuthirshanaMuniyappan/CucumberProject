@@ -15,8 +15,6 @@ import io.cucumber.java.en.*;
 
 public class TC16_withoutSumInsuredNewInsurance extends drivers{
 	
-	WebDriver driver= new ChromeDriver();
-	
 	@When("User filled all the fields without SumInsured")
 	public void user_filled_all_the_fields_without_sum_insured() {
 		driver.findElement(By.id("Name")).sendKeys("Expleo");

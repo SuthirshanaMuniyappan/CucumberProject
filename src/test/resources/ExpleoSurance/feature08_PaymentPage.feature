@@ -1,9 +1,9 @@
 @All_scenario
-#@PaymentPage
+	#@PaymentPage
 Feature: TC08_Payment Page Validation
-#Author: Suthir
+	Author: Suthir
   Scenario: Validating payemnts page
-    Given User is in LoginPage
+    Given User should be in login Page with valid credentials
     When selecting Payment Page
     And user enter the policy amount and calculate and press proceed payment
     And press the proceed to pay

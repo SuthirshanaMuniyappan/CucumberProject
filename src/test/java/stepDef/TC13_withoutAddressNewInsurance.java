@@ -15,9 +15,6 @@ import io.cucumber.java.en.*;
 
 public class TC13_withoutAddressNewInsurance extends drivers {
 	
-	WebDriver driver= new ChromeDriver();
-
-	
 	@When("User filled all the fields without Address")
 	public void user_filled_all_the_fields_without_address() {
 		driver.findElement(By.id("Name")).sendKeys("Expleo");

@@ -15,19 +15,6 @@ import io.cucumber.java.en.*;
 
 public class TC11_withoutNameNewInsurance extends drivers {
 
-	WebDriver driver = new ChromeDriver();
-
-	@Given("User should be in login Page for field validating")
-	public void user_should_be_in_login_page_for_field_validating() throws InterruptedException {
-		driver.get("http://192.168.99.141:3000/home");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.findElement(By.name("username")).sendKeys("suthirshana.muniyappan@expleogroup.com");
-		driver.findElement(By.id("Password")).sendKeys("Suthir");
-		driver.findElement(By.xpath("//button[text()='Submit']")).click();
-		Thread.sleep(2000);
-
-	}
 
 	@When("User Clicks the NewInsurance Tab")
 	public void user_clicks_the_new_insurance_tab() throws InterruptedException {

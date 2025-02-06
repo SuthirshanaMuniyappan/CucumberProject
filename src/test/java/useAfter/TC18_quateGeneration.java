@@ -1,4 +1,4 @@
-package stepDef;
+package useAfter;
 
 import java.time.Duration;
 
@@ -11,15 +11,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class TC18_quateGeneration extends drivers{
-	
-	WebDriver driver = new ChromeDriver();
-	@Given("user login the page with valid credential")
-	public void user_login_the_page_with_valid_credential() {
-		driver.get("http://192.168.99.141:3000");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-	}
 
 	@When("user click the quate generation")
 	public void user_click_the_quate_generation() {

@@ -1,4 +1,3 @@
-
 @All_scenario
 #@deletePolicy
 Feature: TC03_Delete Policy
@@ -6,12 +5,9 @@ Feature: TC03_Delete Policy
 
   @delete_cancel
   Scenario Outline: Validating Delete Policy for Cancel button
-    Given User opens the login page
-    When User should enters "<username>" and "<password>"
-    And User clicks the Submit button
+    Given User should be in login Page with valid credentials
     Then User clicks delete Policy
     Then User clicks Cancel button
-    Then quit the Browser for "Cancel" scenario
 
     Examples: 
       | username                               | password |
@@ -19,12 +15,9 @@ Feature: TC03_Delete Policy
 
   @delete_yes
   Scenario Outline: Validating Delete Policy and Yes button
-    Given User opens the login page
-    When User should enters "<username>" and "<password>"
-    And User clicks the Submit button
+    Given User should be in login Page with valid credentials
     Then User clicks delete Policy
     Then User clicks Yes button
-    Then quit the Browser for "Yes" scenario
 
     Examples: 
       | username                               | password |

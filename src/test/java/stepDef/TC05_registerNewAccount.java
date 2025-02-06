@@ -16,15 +16,6 @@ import io.cucumber.java.en.*;
 
 public class TC05_registerNewAccount extends drivers{
 	
-	WebDriver driver = new ChromeDriver();
-	
-	@Given("User enters into the login page")
-	public void user_enters_into_the_login_page() {
-		driver.get("http://192.168.99.141:3000");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	}
-	
 	@When("User Clicks the Register New Account")
 	public void user_clicks_the_register_new_account() throws InterruptedException {
 		

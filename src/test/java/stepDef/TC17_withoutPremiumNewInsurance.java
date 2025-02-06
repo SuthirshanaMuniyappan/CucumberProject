@@ -15,8 +15,6 @@ import io.cucumber.java.en.*;
 
 public class TC17_withoutPremiumNewInsurance extends drivers{
 	
-	WebDriver driver= new ChromeDriver();
-	
 	@When("User filled all the fields without Premium")
 	public void user_filled_all_the_fields_without_premium() {
 		driver.findElement(By.id("Name")).sendKeys("Expleo");

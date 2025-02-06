@@ -1,4 +1,4 @@
-package hooks;
+package baseClass;
 
 import java.awt.AWTException;
 import java.awt.Robot;

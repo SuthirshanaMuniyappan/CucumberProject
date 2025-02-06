@@ -14,16 +14,6 @@ import io.cucumber.java.en.*;
 
 public class TC08_paymentPage extends drivers{
 	
-	WebDriver driver = new ChromeDriver();
-	
-	@Given("User is in LoginPage")
-	public void user_is_in_login_page() throws InterruptedException  {
-		driver.get("http://192.168.99.141:3000/home");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	   
-	}
-	
 	@When("selecting Payment Page")
 	public void selecting_payment_page() {
 		

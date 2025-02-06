@@ -1,4 +1,4 @@
-package stepDef;
+package useAfter;
 
 import java.awt.AWTException;
 import java.awt.Robot;
@@ -18,17 +18,7 @@ import driver.drivers;
 import io.cucumber.java.en.*;
 
 public class TC20_multipleDelete extends drivers {
-
-	WebDriver driver= new ChromeDriver();
 	
-	@Given("User should be in login Page")
-	public void user_should_be_in_login_page() {
-		driver.get("http://192.168.99.141:3000");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	}
-
-
 	@When("User Clicks the delete button using common name")
 	public void userClicksTheDeleteButtonUsingCommonName() throws InterruptedException {
 		WebElement table = driver.findElement(By.className("insuranceTable"));

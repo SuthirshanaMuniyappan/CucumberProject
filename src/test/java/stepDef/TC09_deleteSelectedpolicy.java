@@ -15,19 +15,6 @@ import io.cucumber.java.en.*;
 
 public class TC09_deleteSelectedpolicy extends drivers{
 	
-	WebDriver driver = new ChromeDriver();
-
-	@Given("User should be in Login Page")
-	public void user_should_be_in_login_page() throws InterruptedException {
-		driver.get("http://192.168.99.141:3000/home");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-//		driver.findElement(By.name("username")).sendKeys("suthirshana.muniyappan@expleogroup.com");
-//		driver.findElement(By.id("Password")).sendKeys("Suthir");
-//		driver.findElement(By.xpath("//button[text()='Submit']")).click();
-//		Thread.sleep(2000);
-	}
-
 	@When("User Select the account using AccountName for delete")
 	public void user_select_the_account_using_account_name_for_delete() throws InterruptedException {
 		// Table Header 

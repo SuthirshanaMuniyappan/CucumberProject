@@ -9,5 +9,5 @@ public class drivers {
 		
 	public static WebDriver driver;
 	public static WebDriverWait wait; 
-	Robot robot;
+	public static Robot robot;
 }

@@ -10,4 +10,3 @@ Feature: TC19_Admin Panel
     When user clicks the Admin panel
     And user clicks manage users to View Users
     Then user delete the button
-    And Quit the browser

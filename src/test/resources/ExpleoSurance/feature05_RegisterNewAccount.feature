@@ -4,12 +4,11 @@ Feature: TC05_Register New User
 #Author: Suthir
   @newUser
   Scenario Outline: Validating New User Registration
-    Given User enters into the login page
+    Given User is on the login page
     When User Clicks the Register New Account
     And User Enters "<Email>""<Password>" and "<ConfirmPassword>"
     Then User clicks the Register button
     And User should get the Success Message
-    Then quit the 1st Browser for registerUser
 
     Examples: 
       | Email           | Password | ConfirmPassword |
@@ -21,13 +20,12 @@ Feature: TC05_Register New User
 
   @registeredUser
   Scenario Outline: Validating Registered Users
-    Given User enters into the login page
+    Given User is on the login page
     When User enters the new registered "<Username>" and "<Password>"
     Then User clicks the submit button
     And User should be logged in Successfully
     Then User should be logged out Successfully
-    Then quit the 2nd Browser for registerUser
-
+    
     Examples: 
       | Username        | Password |
       | user4@gmail.com | tester@1 |
@@ -38,11 +36,10 @@ Feature: TC05_Register New User
 
   @registeredUserwithEmptyCrendentials
   Scenario Outline: Validating Registered Users
-    Given User enters into the login page
+    Given User is on the login page
     When User enters the new registered "<Username>" and "<Password>"
     Then User clicks the submit button
     And User get the error msg
-    Then quit the 3rd Browser for registerUser with empty crendentials
 
     Examples: 
       | Username         | Password |

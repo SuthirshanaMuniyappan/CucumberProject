@@ -17,11 +17,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import driver.drivers;
 import io.cucumber.java.en.*;
 
-public class TC19_adminPanelManageUsers extends drivers {
+public class TC18_adminPanelManageUsers extends drivers {
 
 	@When("user clicks the Admin panel")
 	public void user_clicks_the_admin_panel() throws InterruptedException, AWTException {
-
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL); 
 		robot.keyPress(KeyEvent.VK_MINUS); robot.keyRelease(KeyEvent.VK_MINUS);

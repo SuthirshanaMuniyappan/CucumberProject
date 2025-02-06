@@ -12,7 +12,6 @@ Feature: TC10_Delete Multiple Registered Accounts Created in New Insurace
     And User clicks the Yes or No button
     And User click the Submit button
     Then Page should show Insurance policy created successfully
-    And Quit the NewInsurance Browser
 
     Examples: 
       | Name   | Email                      | Address | Date       | Gender | PolicyType        | Coverage              | SumInsured | Premium |

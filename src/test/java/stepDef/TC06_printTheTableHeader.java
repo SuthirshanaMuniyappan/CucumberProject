@@ -14,12 +14,8 @@ import io.cucumber.java.en.*;
 
 public class TC06_printTheTableHeader extends drivers{
 	
-	WebDriver driver = new ChromeDriver();
-	
 	@When("User login {string} and {string}")
 	public void user_login_and(String username, String password) {
-		driver.get("http://192.168.99.141:3000/");
-		driver.manage().window().maximize();
 		driver.findElement(By.id("username")).sendKeys(username);
 		driver.findElement(By.id("Password")).sendKeys(password);
 	}

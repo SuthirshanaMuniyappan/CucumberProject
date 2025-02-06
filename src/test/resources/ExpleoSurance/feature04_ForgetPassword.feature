@@ -1,4 +1,3 @@
-#Author: Suthir
 @All_scenario
 #@ForgetPassword
 Feature: TC04_User is changing the password
@@ -13,4 +12,3 @@ Feature: TC04_User is changing the password
     And User redirected to the login page
     And User enters the valid "<Username>" and "<Password>"
     And User clicks the login button and navigate to the dashboard page
-    Then Quit the browser

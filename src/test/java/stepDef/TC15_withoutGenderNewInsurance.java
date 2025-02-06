@@ -14,8 +14,6 @@ import driver.drivers;
 import io.cucumber.java.en.*;
 
 public class TC15_withoutGenderNewInsurance extends drivers{
-	
-	WebDriver driver= new ChromeDriver();
 
 	@When("User filled all the fields without Gender")
 	public void user_filled_all_the_fields_without_gender() {

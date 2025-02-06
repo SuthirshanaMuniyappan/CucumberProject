@@ -14,14 +14,6 @@ import io.cucumber.java.en.When;
 
 public class TC07_deleteAccount extends drivers {
 	
-	WebDriver driver = new ChromeDriver();
-	
-	@Given("User enter the ExpleosuraceHome page")
-	public void user_enter_the_expleosurace_home_page() {
-		driver.get("http://192.168.99.141:3000/home");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	}
 
 	@When("User clicks the delete button for the selected Users")
 	public void user_clicks_the_delete_button_for_the_selected_users() {

@@ -23,6 +23,7 @@ public class TC01_loginPage extends drivers {
 	@Given("The user is on the login page")
 	public void the_user_is_on_the_login_page() {
 		System.out.println("Expleosurance Page launched from hooks Successfully");
+
 	}
 
 	@When("User should login {string} and {string}")

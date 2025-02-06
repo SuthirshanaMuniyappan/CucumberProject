@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 //@RunWith(Cucumber.class)
 @CucumberOptions(
+
 		features ={"src/test/resources/ExpleoSurance/"},
 		glue = {"stepDef", "hooks"},
 	    tags = "@All_scenario", 

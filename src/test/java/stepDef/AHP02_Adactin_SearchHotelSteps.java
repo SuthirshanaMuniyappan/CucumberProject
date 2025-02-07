@@ -1,6 +1,9 @@
 package stepDef;
 
 import java.time.Duration;
+
+import javax.annotation.Nullable;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,7 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import baseClass.BaseClass;
 import io.cucumber.java.en.*;
 
-public class AHP02_Adactin_SearchHotelSteps extends drivers {
+public class AHP02_Adactin_SearchHotelSteps extends BaseClass {
 
 	@Given("User should be in Adactin Hotel Home page")
 	public void userShouldBeInAdactinHotelHomePage() {
@@ -80,7 +83,7 @@ public class AHP02_Adactin_SearchHotelSteps extends drivers {
 	}
 	@Then("it should show the Order Number")
 	public void itShouldShowTheOrderNumber() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement orderNumber = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@id, 'order_no')]")));
 		@Nullable
 		String text = orderNumber.getAttribute("value");

@@ -29,7 +29,7 @@ public class AHP04_CancelBooking extends BaseClass {
 	}
 	@When("select OK in alert")
 	public void selectOKInAlert() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent()).accept();
 	}
 	@Then("Booking should be deleted")

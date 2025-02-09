@@ -16,11 +16,15 @@ public class hooksClass extends drivers {
 	public void launch(Scenario scenario) {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		if (scenario.getSourceTagNames().contains("@Sauce_Demo")) {
+		if (scenario.getSourceTagNames().contains("@DemoBlaze")) {
+			driver.get("https://www.demoblaze.com/");
+		} else if (scenario.getSourceTagNames().contains("@Sauce_Demo")) {
 			driver.get("https://www.saucedemo.com");
-		} else {
+		} else if (scenario.getSourceTagNames().contains("@Adactin")) {
+			driver.get("hhttps://adactinhotelapp.com/"); 
+		} else if (scenario.getSourceTagNames().contains("@RedBus")) {
+			driver.get("https://www.redbus.in/");
+		}else {
 			driver.get("http://192.168.99.141:3000/");
 		}
 	}

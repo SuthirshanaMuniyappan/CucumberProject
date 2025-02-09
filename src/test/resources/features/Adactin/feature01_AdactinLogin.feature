@@ -1,4 +1,4 @@
-@All_Scenario
+@All_scenario
 Feature: Adactin Hotel Booking Validation
 
   @valid_Login

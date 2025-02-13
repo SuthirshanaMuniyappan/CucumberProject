@@ -1,5 +1,5 @@
 @All_scenario
-Feature: Suthir_10022024_RedBus_CancellationPolicy feature
+Feature: Suthir_11022024_RedBus_CancellationPolicy feature
 
   @CancellationPolicy
   Scenario: Search for a bus from Chennai to Palani

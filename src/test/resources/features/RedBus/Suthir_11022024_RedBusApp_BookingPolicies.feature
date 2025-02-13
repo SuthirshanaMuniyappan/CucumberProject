@@ -1,5 +1,5 @@
 @All_scenario
-Feature: Suthir_10022024_RedBus_BookingPolicies feature
+Feature: Suthir_11022024_RedBus_BookingPolicies feature
 
   @BookingPolicies
   Scenario: Search for a bus from Chennai to Palani

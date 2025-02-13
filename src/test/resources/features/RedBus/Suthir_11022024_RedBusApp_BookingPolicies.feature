@@ -1,4 +1,4 @@
-@All_scenarios
+@All_scenario
 Feature: Suthir_10022024_RedBus_BookingPolicies feature
 
   @BookingPolicies
